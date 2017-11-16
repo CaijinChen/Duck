@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>header</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            background-color: rgba(255,255,255,0.6);
+            vertical-align: middle;
+            font-family: "微软雅黑";
+            font-weight:100;
+        }
+        div.box{
+            position: absolute;
+            top:10px;
+            left:38%;
+            height:66px;
+            width:820px;
+        }
+        div#header .input{
+            border-color:transparent transparent rgba(91, 192, 223, 1);
+            border-width: 2px;
+            border-style:solid;
+            height: 35px;
+            width:350px;
+        }
+        div#header button.search{
+            cursor: pointer;
+            display: inline-block;
+            width:60px;
+            height:30px;
+            border: none;
+            font-size: 15px;
+            text-align: center;
+            border-radius: 15px;
+            color:white;
+            background-color: rgba(91, 192, 223, 1);
+            transition: all .3s ease-in-out;
+        }
+        div#header button.search:hover{
+            color: #777;
+        }
+        #header div a.btn{
+            position: relative;
+            top:2px;
+            display: inline-block;
+            width:60px;
+            height:30px;
+            color: #777;
+            font-size: 15px;
+            line-height: 30px;
+            text-align: center;
+            border-bottom: 2px rgba(91, 192, 223, 1) solid;
+            margin-left:20px;
+            color: #333;
+            transition: all .3s ease-in-out;
+        }
+        #header div a.btn:hover{
+            border-color: #777;
+            color: rgba(91, 192, 223, 1);
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <img src="../images/icon.jpg" width="120" height="70" style="display: inline-block;margin-left: 200px"/>
+    <div class="box">
+        <input type="text" placeholder="search our store" class="input" value="">
+        <button class="search">搜索</button>
+        <a class="btn" href="register.html" target="_parent">登入</a>
+        <a class="btn" href="./register.html" target="_parent">注册</a>
+    </div>
+</div>
+</body>
+</html>

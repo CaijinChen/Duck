@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>buy</title>
+    <link rel="stylesheet" href="../css/buy.css" type="text/css"/>
+    <script src="../javascript/buy.js"></script>
+</head>
+<body>
+<iframe src="./header.html" id="header" scrolling="no"></iframe>
+<div id="main">
+    <div class="img">
+        <img src="../images/111.jpg" width="220" height="282" class="big"/>
+        <img src="../images/101.jpg" width="20" height="25" class="small" onmouseover="changeImage(this,0)"/>
+        <img src="../images/102.jpg" width="20" height="25" class="small" onmouseover="changeImage(this,1)"/>
+        <img src="../images/103.jpg" width="20" height="25" class="small" onmouseover="changeImage(this,2)"/>
+        <img src="../images/104.jpg" width="20" height="25" class="small" onmouseover="changeImage(this,3)"/>
+        <p style="position: relative;top: -100px;height: 60px;color:#eee;background-color: rgba(255,255,255,0.5);cursor: pointer">
+            <span style="text-decoration: line-through;padding-left: 10px;color: #b00;line-height: 30px">￥219</span>
+            <span style="color: #b00">￥109</span>
+            <br/>
+            <span style="padding-left: 10px;">秋季花纹裙</span>
+        </p>
+    </div>
+    <div class="msg">
+        <p>选择产品属性</p>
+        <ul class="list-a">
+            <li class="item" onclick="change(this,0)">未选</li>
+            <li class="item" onclick="change(this,1)">黄色花纹</li>
+            <li class="item" onclick="change(this,2)">白色花纹</li>
+            <li class="item" onclick="change(this,3)">米黄色花纹</li>
+            <li class="item" onclick="change(this,4)">黑色花纹</li>
+        </ul>
+        <p>选择产品尺码</p>
+        <ul class="list-b">
+            <li class="item" onclick="choose(this,5)">未选</li>
+            <li class="item" onclick="choose(this,6)">S码</li>
+            <li class="item" onclick="choose(this,7)">M码</li>
+            <li class="item" onclick="choose(this,8)">X码</li>
+            <li class="item" onclick="choose(this,9)">XX码</li>
+        </ul>
+        <p>选择商品件数</p>
+        <label style="position: relative;top: -15px;">数目</label>
+        <div style="width: 152px;height: 41px;border: 1px #999 solid;display: inline-block;position: relative;text-align: center;line-height: 25px">
+            <div id="num" style="width: 130px;height: 40px;display: inline-block;position: relative;left: -10px;line-height: 40px">1</div>
+            <div style="width:20px;height: 20px;border-left:  1px #999 solid;border-bottom:  1px #999 solid;display: inline-block;position: absolute;right: 0;top: 0;cursor: pointer;background-color: #ccc" id="up">^</div>
+            <div style="transform: rotate(180deg);width:20px;height: 20px;border-right:  1px #999 solid;display: inline-block;position: absolute;right: 0;bottom: 0;cursor: pointer;background-color: #ccc" id="down">^</div>
+        </div>
+        <br/>
+        <button onclick="check(0)">立即购买</button>
+        <button onclick="check(1)">加入购物车</button>
+    </div>
+    <div class="msg" style="width: 300px;">
+        <p style="margin-bottom: 20px">请选择收货地址</p>
+        <label for="province">省/直辖市</label>
+        <select id="province">
+            <option selected="selected">北京市</option>
+            <option>重庆市</option>
+            <option>河北省</option>
+            <option>海南省</option>
+            <option>江西省</option>
+            <option>上海市</option>
+            <option>四川省</option>
+            <option>江苏省</option>
+            <option>湖北省</option>
+            <option>广州省</option>
+            <option>云南省</option>
+        </select>
+        <label for="city">地级市</label>
+        <select id="city">
+            <option selected="selected">北京市</option>
+            <option>重庆市</option>
+            <option>河北省</option>
+            <option>海南省</option>
+            <option>江西省</option>
+            <option>上海市</option>
+            <option>四川省</option>
+            <option>江苏省</option>
+            <option>湖北省</option>
+            <option>广州省</option>
+            <option>云南省</option>
+        </select>
+        <label for="town">地级县</label>
+        <select id="town">
+            <option selected="selected">北京市</option>
+            <option>重庆市</option>
+            <option>河北省</option>
+            <option>海南省</option>
+            <option>江西省</option>
+            <option>上海市</option>
+            <option>四川省</option>
+            <option>江苏省</option>
+            <option>湖北省</option>
+            <option>广州省</option>
+            <option>云南省</option>
+        </select>
+        <label for="more">详细地址</label>
+        <input id="more" type="text"/>
+        <img src="../images/money.PNG" width="190" height="190"/>
+        <p style="border: none;text-align: center;height: 50px;margin-left: 80px;">对服务很满意，扫扫二维码向我小额赞助吧！</p>
+    </div>
+</div>
+<div id="footer">
+    <p>
+        <a href="#">关于我们</a>|<a href="#">联系我们</a>|
+        <a href="#">联系客服</a>|<a href="#">合作招商</a>|
+        <a href="#">商家帮助</a>|<a href="#">营销中心</a>|
+        <a href="#">友情链接</a>|<a href="#">销售联盟</a>|
+        <a href="#">风险监测</a>|<a href="#">隐私政策</a>
+    </p>
+    <p>copyright@chencaijin</p>
+</div>
+</body>
+</html>

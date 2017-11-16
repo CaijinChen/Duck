@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" href="../css/register.css" type="text/css"/>
+    <script src="../javascript/register.js"></script>
+</head>
+<body>
+<div id="first">
+    <div class="mask">
+        <div class="some">
+            <p style="font-size:25px;background-color: rgba(0, 0, 0, 0.15);padding-left: 20px;text-align:left;font-weight: 500">
+                    煎饼果子注册协议与隐私条款
+            </p>
+            <div style="width: 600px;height: 350px;overflow-y: scroll">
+                <p style="text-align: center;font-weight: 400;font-size: 22px">
+                    欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用Duck网站的各种工具和服务。
+                    本服务协议双方为煎饼果子和煎饼果子网用户，本服务协议具有合同效力。
+                    煎饼果子的权利和义务
+                </p>
+                <p>
+                    1.煎饼果子有义务在现有技术上维
+                    护整个网上交易平台的正常运行，并努力提升和改进技术，使用户网上交易活动的顺利。
+                </p>
+                <p>
+                    2.对用户在注册使用煎饼果子
+                    网上交易平台中所遇到的与交易或注册有关的问题及反映的情况，煎饼果子应及时作出回复。
+                </p>
+                <p>
+                    3.对于在煎饼果子网网上交易平
+                    台上的不当行为或其它任何煎饼果子认为应
+                    当终止服务的情况，煎饼果子有权随时作出删除相关信息、终止服务提供等处理，而无须征得用户的同意。
+                </p>
+                <p>
+                    4.因网上交易平台的特殊性，煎
+                    饼果子没有义务对所有用户的注册资料、所有的交易行为以及与交易有关的其他事项进行事先审查。
+                </p>
+            </div>
+            <a href="./index.html" style="background-color: #666;color: #888;left: 100px;text-align: center;line-height: 50px">取消</a>
+            <button style="background-color: #c00;color: #eee;right: 100px;">同意并继续</button>
+        </div>
+    </div>
+</div>
+<div id="header">
+    <img src="../images/icon.jpg" width="200" height="120"/>
+    <p style="bottom: 50px;font-weight: 600;color: #333">欢迎注册</p>
+    <p style="bottom: 10px;right: -650px;font-size: 18px;color: #666">已有帐号，我要<a href="./login.html" style="color:#e00;font-weight: 500">登入</a></p>
+</div>
+<div id="main">
+    <form method="post" action="./index.html">
+        <div>
+            <label for="user">用户名</label>
+            <input type="text" id="user" onfocus="show(0)" onblur="hide(0)" name="text" value=""/>
+        </div>
+        <div class="tip">
+            &nbsp;&nbsp;&nbsp;!此项不能为空，支持除空白字符的任意字符
+        </div>
+        <div>
+            <label for="pwd">设置密码</label>
+            <input type="password" id="pwd" onfocus="show(1)" onblur="hide(1)" name="text" value=""/>
+        </div>
+        <div class="tip">
+            &nbsp;&nbsp;&nbsp;!建议使用数字，英文，符号增加密码的复杂度，提升安全系数
+        </div>
+        <div>
+            <label for="again">确认密码</label>
+            <input type="password" id="again" onfocus="show(2)" onblur="hide(2)" name="text" value=""/>
+        </div>
+        <div class="tip">
+            &nbsp;&nbsp;&nbsp;重新输入密码以确认
+        </div>
+        <div>
+            <label for="phone">绑定手机号</label>
+            <input type="text" id="phone" onfocus="show(3)" onblur="hide(3)" name="text" value=""/>
+        </div>
+        <div class="tip">
+            &nbsp;&nbsp;&nbsp;绑定手机号码使账号更安全！
+        </div>
+        <div>
+            <label for="sure" style="cursor: pointer;" title="点击我获取验证码" class="get">验证码获取</label>
+            <input type="text" id="sure" onfocus="show(4)" onblur="hide(4)" name="text" value=""/>
+        </div>
+        <div class="tip">
+            &nbsp;&nbsp;&nbsp;点击左侧验证码将以短信的形式发送给你的手机
+        </div>
+        <input type="submit" class="submit" value="提 交 注 册"/>
+    </form>
+    <img src="../images/qq.PNG" width="300" height="400" class="img"/>
+    <p class="p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;遇到问题了？赶紧跟主银反映一下吧!</p>
+</div>
+</body>
+</html>

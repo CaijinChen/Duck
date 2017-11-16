@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    font-family: "微软雅黑";
+    font-weight:100;
+}
+a{
+    text-decoration: none;
+}
+#header{
+    width:100%;
+    height:70px;
+    border: none;
+    z-index: 9;
+    overflow: hidden;
+}
+#main{
+    border-top: 20px #c00 solid;
+    width:100%;
+    height:500px;
+    padding-top: 20px;
+}
+.big,
+.small{
+    cursor: pointer;
+}
+.img{
+    float: left;
+    display: inline-block;
+    width: 220px;
+    height: 320px;
+    padding: 10px;
+    border: 1px rgba(0, 0, 0, 0.05) solid;
+    margin: 20px 60px 0 100px;
+}
+img.small{
+    padding:2px;
+    border: 1px #eee solid;
+}
+.msg{
+    float: left;
+    padding-left:50px ;
+    display: inline-block;
+    width:400px;
+    height:500px;
+    border-left: 1px rgba(0,0,0,0.05) solid;
+}
+label{
+    display: inline-block;
+    height: 24px;
+    width:100px;
+    padding:5px;
+}
+.msg p{
+    height: 24px;
+    width:200px;
+    padding-top:10px;
+    margin-bottom: 10px;
+    border-bottom: 1px #e00 solid;
+}
+.list-a,
+.list-b{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    width:80px;
+    height:30px;
+    border: 1px #a00 solid;
+    color: #888;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    margin:10px;
+    cursor: pointer;
+}
+.msg img{
+    margin: 20px 0 0 80px;
+    padding:10px;
+    border: 1px rgba(0, 0, 0, 0.05) solid;
+}
+#footer{
+    background-color: rgba(131, 232, 144, 0.54);
+    width:100%;
+    height: 100px;
+    text-align: center;
+}
+#footer p{
+    height:50px;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 50px;
+}
+#footer a{
+    color: #666;
+}
+button{
+    margin-top: 30px;
+    margin-left: 10px;
+    width:140px;
+    height:40px;
+    border-radius: 20px;
+    background-color: #c00;
+    color: #ccc;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+button:hover{
+    background-color: #f00;
+    color: white;
+}
+select,
+input{
+    width:180px;
+    height:30px;
+}

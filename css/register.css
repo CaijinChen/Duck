@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    font-family: "微软雅黑";
+    font-weight:100;
+}
+a{
+    text-decoration: none;
+}
+div.mask{
+    background-color: rgba(0, 0, 0, 0.1);
+    width:100%;
+    height:1002px;
+}
+#first{
+    width:100%;
+    height:1002px;
+    position: absolute;
+    z-index: 9;
+}
+div.some{
+    position: fixed;
+    top:80px;
+    left:410px;
+    width:600px;
+    height:500px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 5px #bbb;
+    border:1px grey solid;
+    background-color: #bbb;
+}
+div.some p{
+    font-size: 15px;
+    color: #555;
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+}
+div.some button,
+div.some a{
+    font-size: 25px;
+    border: none;
+    width:150px;
+    height:50px;
+    position: absolute;
+    bottom:20px;
+    cursor: pointer;
+}
+#header{
+    width: 100%;
+    height:130px;
+    box-shadow: 0 5px 3px 3px #ccc;
+}
+#header img{
+    margin-left:190px;
+}
+#header p{
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+}
+#main{
+    width:1000px;
+    margin:50px auto 0;
+    height:550px;
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: 1px #eee solid;
+}
+#main label,
+#main input{
+    display: inline-block;
+    border-color: rgba(255,0,0,0.7);
+    border-width: 1px;
+    border-style: solid;
+    height:50px;
+}
+#main label{
+    width:90px;
+    border-right:none;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    left:5px;
+    top:1px;
+    color: #999;
+}
+#main input{
+    width:250px;
+    border-left:none;
+}
+#main form div{
+    width:347px;
+    height:52px;
+    margin:10px 0 0 100px;
+}
+#main div.tip{
+    opacity: 0;
+    width:340px;
+    height:20px;
+    background-color: rgba(232, 63, 84, 0.1);
+    color: #888;
+    margin:5px 0 0 105px;
+    font-size:10px;
+}
+#main input.submit{
+    background-color: rgba(225, 0, 0, 0.7);
+    font-size: 25px;
+    font-weight: 100;
+    margin:25px 0 0 105px;
+    width: 345px;
+    color:#333;
+    cursor: pointer;
+}
+.img,
+.p{
+    position: relative;
+    left:100px;
+    padding-top:40px;
+}
+#main label.get:hover{
+    background-color: rgba(234, 77, 77, 0.77);
+    color: rgba(0, 0, 0, 0.8);
+}
